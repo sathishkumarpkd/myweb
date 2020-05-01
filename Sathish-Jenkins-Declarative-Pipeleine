@@ -14,12 +14,13 @@ pipeline {
       stage("Maven Build"){
             steps{
                 sh "mvn clean package"
+                sh "mv target/*.war target/myweb.war"
             }
        }
        stage("deploy-dev"){
          steps{
              sshagent(['tomcat8']) {
-               // some block
+               scp -o StrictHostKeyChecking=no target/myweb.war  ec2-user@3.89.132.238:/opt/tomcat8/webapps/              
              }         
          }       
        }
