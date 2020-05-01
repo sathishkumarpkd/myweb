@@ -10,5 +10,10 @@ pipeline {
             git 'https://github.com/sathishkumarpkd/myweb.git'
          }
       }
+      stage("Maven Build"){
+            steps{
+                sh "mvn clean package"              
+            }
+       }
    }
 }
