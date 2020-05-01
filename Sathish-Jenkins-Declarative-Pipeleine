@@ -5,6 +5,8 @@ pipeline {
       stage('Git checkout') {
          steps {
             echo 'Hello World welcome to jenkins declarative'
+            echo 'below git url is not required, as Jenkins pipeline script is already configured with SCM'
+            echo 'and script path is mentioned with Sathish-Jenkins-Declarative-Pipeleine'
             git 'https://github.com/sathishkumarpkd/myweb.git'
          }
       }
