@@ -1,0 +1,12 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('Git checkout') {
+         steps {
+            echo 'Hello World welcome to jenkins declarative'
+            git 'https://github.com/sathishkumarpkd/myweb.git'
+         }
+      }
+   }
+}
