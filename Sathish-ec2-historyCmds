@@ -1,0 +1,39 @@
+Jenkins secret key
+88de14155e2347f59ae1dbbb96d72c26
+http://40.78.135.105:8080/
+
+on ec2-user for tomcat installation.
+
+    1  clear
+    2  which java
+    3  yum list | grep java-1.8.0
+    4  yum install java-1.8.0-openjdk.x86_64 -y
+    5  which java
+    6  history
+    7   which java
+    8      3  yum list | grep java-1.8.0
+    9      4  yum install java-1.8.0-openjdk.x86_64 -y
+   10      5  which java
+   11      6  history
+   12  clear
+   13  cd /opt/
+   14  wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.54/bin/apache-tomcat-8.5.54.tar.gz
+   15  clear
+   16  ls
+   17  tar -xf apache-tomcat-8.5.54.tar.gz
+   18  ls
+   19  mv apache-tomcat-8.5.54 tomcat8
+   20  ls
+   21  sudo chown -R ec2-user:ec2-user tomcat8/
+   22  history
+   23  clear
+   24  ls -l
+   25  cd tomcat8/
+   26  cd bin/
+   27  ./startup.sh
+   28  sudo chown -R ec2-user:ec2-user tomcat8/
+   29  cd ..
+   30  sudo chown -R ec2-user:ec2-user tomcat8/
+   31  cd ..
+   32  sudo chown -R ec2-user:ec2-user tomcat8/
+   33  history
