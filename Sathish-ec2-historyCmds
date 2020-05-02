@@ -1,7 +1,12 @@
 Jenkins secret key
 88de14155e2347f59ae1dbbb96d72c26
 http://40.78.135.105:8080/
-
+/**
+for Jenkins to docker integration: execute below cmds.
+sudo usermod -a -G docker jenkins
+service jenkins restart
+**/
+for K8 CI+CD used https://github.com/sathishkumarpkd/node-app.git repo
 on ec2-user for tomcat installation.
 
     1  clear
